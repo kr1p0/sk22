@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="C:\Users\kr1p0\sk.png"
+   inkscape:export-xdpi="25.042299"
+   inkscape:export-ydpi="25.042299"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="sk.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.90583674"
+     inkscape:cx="761.72667"
+     inkscape:cy="507.81778"
+     inkscape:window-width="3840"
+     inkscape:window-height="2480"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="132.70399"
+       y="297.41306"
+       width="360.64264"
+       height="147.53561"
+       id="rect3928" />
+  </defs>
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.20005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:111"
+       d="m 221.7197,191.41999 c -40.16661,-9.34139 -72.92448,-17.01828 -72.79529,-17.05973 0.12924,-0.0414 23.35878,2.37064 51.6213,5.36018 58.11316,6.14708 63.48384,6.71718 64.90364,6.88985 l 1.01576,0.12355 v -82.63387 c 0,-45.448647 -0.10545,-82.681972 -0.23439,-82.740705 -0.12891,-0.05874 -26.32362,3.100741 -58.2104,7.021055 -31.88681,3.920316 -58.37319,7.101839 -58.85865,7.070054 -0.69982,-0.04581 144.94792,-34.0794927 145.82262,-34.074537 0.12891,7.263e-4 0.23442,46.592965 0.23442,103.538293 0,56.94532 -0.10545,103.52648 -0.23442,103.51362 -0.12889,-0.0134 -33.09797,-7.66628 -73.26459,-17.00772 z"
+       id="path2088" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45.8611px;line-height:1.25;font-family:'OCR A Extended';-inkscape-font-specification:'OCR A Extended';fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="44.611958"
+       y="123.3025"
+       id="text2814"><tspan
+         sodipodi:role="line"
+         id="tspan2812"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45.8611px;font-family:'OCR A Extended';-inkscape-font-specification:'OCR A Extended';fill:#00ff00;fill-opacity:1;stroke-width:0.264583"
+         x="44.611958"
+         y="123.3025"> </tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text3926"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect3928);fill:#00ff00;fill-opacity:1;stroke:none" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:59.9722px;line-height:1.25;font-family:sans-serif;fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-1.168771"
+       y="121.20985"
+       id="text1660"><tspan
+         sodipodi:role="line"
+         id="tspan1658"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:59.9722px;font-family:'Agency FB';-inkscape-font-specification:'Agency FB Bold';fill:#1a1a1a;stroke-width:0.264583"
+         x="-1.168771"
+         y="121.20985">Stara Kuznia</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-stretch:condensed;font-size:35.2778px;line-height:1.25;font-family:'Agency FB';-inkscape-font-specification:'Agency FB Bold Condensed';stroke-width:0.264583"
+       x="62.214584"
+       y="176.71274"
+       id="text16173"><tspan
+         sodipodi:role="line"
+         id="tspan16171"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="62.214584"
+         y="176.71274" /></text>
+  </g>
+</svg>

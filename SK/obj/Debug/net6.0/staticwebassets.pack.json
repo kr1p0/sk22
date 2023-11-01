@@ -1,0 +1,941 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SK.bundle.scp.css",
+      "PackagePath": "staticwebassets\\SK.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\alarm.svg",
+      "PackagePath": "staticwebassets\\img\\black\\alarm.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\app-indicator.svg",
+      "PackagePath": "staticwebassets\\img\\black\\app-indicator.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\app-indicator2.svg",
+      "PackagePath": "staticwebassets\\img\\black\\app-indicator2.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\arrow-clockwise.svg",
+      "PackagePath": "staticwebassets\\img\\black\\arrow-clockwise.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\arrow-left.svg",
+      "PackagePath": "staticwebassets\\img\\black\\arrow-left.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\arrow-repeat.svg",
+      "PackagePath": "staticwebassets\\img\\black\\arrow-repeat.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\arrow-return-left.svg",
+      "PackagePath": "staticwebassets\\img\\black\\arrow-return-left.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\arrow-right-circle-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\arrow-right-circle-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\arrow-right-circle.svg",
+      "PackagePath": "staticwebassets\\img\\black\\arrow-right-circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\arrow-right-square.svg",
+      "PackagePath": "staticwebassets\\img\\black\\arrow-right-square.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\award-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\award-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\award.svg",
+      "PackagePath": "staticwebassets\\img\\black\\award.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\bar-chart-line-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\bar-chart-line-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\bar-chart-line.svg",
+      "PackagePath": "staticwebassets\\img\\black\\bar-chart-line.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\bar-chart.svg",
+      "PackagePath": "staticwebassets\\img\\black\\bar-chart.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\bell-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\bell-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\bell.svg",
+      "PackagePath": "staticwebassets\\img\\black\\bell.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\bookmarks.svg",
+      "PackagePath": "staticwebassets\\img\\black\\bookmarks.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\box-arrow-in-right.svg",
+      "PackagePath": "staticwebassets\\img\\black\\box-arrow-in-right.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\box-arrow-right.svg",
+      "PackagePath": "staticwebassets\\img\\black\\box-arrow-right.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\broadcast.svg",
+      "PackagePath": "staticwebassets\\img\\black\\broadcast.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\calendar-check-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\calendar-check-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\calendar-check.svg",
+      "PackagePath": "staticwebassets\\img\\black\\calendar-check.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\calendar-week-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\calendar-week-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\calendar-week.svg",
+      "PackagePath": "staticwebassets\\img\\black\\calendar-week.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\calendar2-week.svg",
+      "PackagePath": "staticwebassets\\img\\black\\calendar2-week.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\card-heading.svg",
+      "PackagePath": "staticwebassets\\img\\black\\card-heading.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\chat-dots-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\chat-dots-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\chat-dots.svg",
+      "PackagePath": "staticwebassets\\img\\black\\chat-dots.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\chat-left-dots-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\chat-left-dots-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\chat-left-dots.svg",
+      "PackagePath": "staticwebassets\\img\\black\\chat-left-dots.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\check2-circle.svg",
+      "PackagePath": "staticwebassets\\img\\black\\check2-circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\check2-square.svg",
+      "PackagePath": "staticwebassets\\img\\black\\check2-square.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\check2-square2.svg",
+      "PackagePath": "staticwebassets\\img\\black\\check2-square2.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\clipboard-data.svg",
+      "PackagePath": "staticwebassets\\img\\black\\clipboard-data.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\clock.svg",
+      "PackagePath": "staticwebassets\\img\\black\\clock.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\cloud-arrow-down.svg",
+      "PackagePath": "staticwebassets\\img\\black\\cloud-arrow-down.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\cloud-plus-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\cloud-plus-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\cloud-plus.svg",
+      "PackagePath": "staticwebassets\\img\\black\\cloud-plus.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\cone-striped.svg",
+      "PackagePath": "staticwebassets\\img\\black\\cone-striped.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\currency-dollar-oryg-custom.svg",
+      "PackagePath": "staticwebassets\\img\\black\\currency-dollar-oryg-custom.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\currency-dollar-oryg.svg",
+      "PackagePath": "staticwebassets\\img\\black\\currency-dollar-oryg.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\currency-dollar.svg",
+      "PackagePath": "staticwebassets\\img\\black\\currency-dollar.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\envelope-check.svg",
+      "PackagePath": "staticwebassets\\img\\black\\envelope-check.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\exclamation-square.svg",
+      "PackagePath": "staticwebassets\\img\\black\\exclamation-square.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\exclamation.svg",
+      "PackagePath": "staticwebassets\\img\\black\\exclamation.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\extinguisher-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\extinguisher-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\file-earmark-arrow-down.svg",
+      "PackagePath": "staticwebassets\\img\\black\\file-earmark-arrow-down.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\file-earmark-lock2.svg",
+      "PackagePath": "staticwebassets\\img\\black\\file-earmark-lock2.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\file-earmark-pdf-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\file-earmark-pdf-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\file-earmark-pdf.svg",
+      "PackagePath": "staticwebassets\\img\\black\\file-earmark-pdf.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\file-earmark-person.svg",
+      "PackagePath": "staticwebassets\\img\\black\\file-earmark-person.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\file-earmark-x-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\file-earmark-x-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\file-earmark-x.svg",
+      "PackagePath": "staticwebassets\\img\\black\\file-earmark-x.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\fingerprint.svg",
+      "PackagePath": "staticwebassets\\img\\black\\fingerprint.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\gear-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\gear-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\gear-wide-connected.svg",
+      "PackagePath": "staticwebassets\\img\\black\\gear-wide-connected.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\geo-alt-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\geo-alt-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\link.svg",
+      "PackagePath": "staticwebassets\\img\\black\\link.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\list-task.svg",
+      "PackagePath": "staticwebassets\\img\\black\\list-task.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\list-ul.svg",
+      "PackagePath": "staticwebassets\\img\\black\\list-ul.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\list.svg",
+      "PackagePath": "staticwebassets\\img\\black\\list.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\menu-app-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\menu-app-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\nut-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\nut-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\patch-exclamation.svg",
+      "PackagePath": "staticwebassets\\img\\black\\patch-exclamation.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\pencil-check.svg",
+      "PackagePath": "staticwebassets\\img\\black\\pencil-check.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\pencil-square.svg",
+      "PackagePath": "staticwebassets\\img\\black\\pencil-square.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\people-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\people-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\people.svg",
+      "PackagePath": "staticwebassets\\img\\black\\people.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\person-check-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\person-check-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\person-check.svg",
+      "PackagePath": "staticwebassets\\img\\black\\person-check.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\person-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\person-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\person-lines-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\person-lines-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\person.svg",
+      "PackagePath": "staticwebassets\\img\\black\\person.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\phone-vibrate — kopia.svg",
+      "PackagePath": "staticwebassets\\img\\black\\phone-vibrate — kopia.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\phone-vibrate.svg",
+      "PackagePath": "staticwebassets\\img\\black\\phone-vibrate.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\pie-chart-fill-custom.svg",
+      "PackagePath": "staticwebassets\\img\\black\\pie-chart-fill-custom.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\pie-chart-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\pie-chart-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\pin-angle.svg",
+      "PackagePath": "staticwebassets\\img\\black\\pin-angle.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\pin-map-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\pin-map-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\plus-circle-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\plus-circle-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\plus-lg.svg",
+      "PackagePath": "staticwebassets\\img\\black\\plus-lg.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\printer.svg",
+      "PackagePath": "staticwebassets\\img\\black\\printer.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\qr-code-scan.svg",
+      "PackagePath": "staticwebassets\\img\\black\\qr-code-scan.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\qr-code.svg",
+      "PackagePath": "staticwebassets\\img\\black\\qr-code.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\save.svg",
+      "PackagePath": "staticwebassets\\img\\black\\save.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\search.svg",
+      "PackagePath": "staticwebassets\\img\\black\\search.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\sk.svg",
+      "PackagePath": "staticwebassets\\img\\black\\sk.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\slash-square.svg",
+      "PackagePath": "staticwebassets\\img\\black\\slash-square.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\speedometer2.svg",
+      "PackagePath": "staticwebassets\\img\\black\\speedometer2.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\square-fillx1.svg",
+      "PackagePath": "staticwebassets\\img\\black\\square-fillx1.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\square-fillx2.svg",
+      "PackagePath": "staticwebassets\\img\\black\\square-fillx2.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\stamp.svg",
+      "PackagePath": "staticwebassets\\img\\black\\stamp.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\stopwatch-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\stopwatch-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\three-dots-vertical.svg",
+      "PackagePath": "staticwebassets\\img\\black\\three-dots-vertical.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\three-dots.svg",
+      "PackagePath": "staticwebassets\\img\\black\\three-dots.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\trash.svg",
+      "PackagePath": "staticwebassets\\img\\black\\trash.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\trophy-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\trophy-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\truck.svg",
+      "PackagePath": "staticwebassets\\img\\black\\truck.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\uncheck2-circle.svg",
+      "PackagePath": "staticwebassets\\img\\black\\uncheck2-circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\wind.svg",
+      "PackagePath": "staticwebassets\\img\\black\\wind.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\wrench-adjustable-circle-fill.svg",
+      "PackagePath": "staticwebassets\\img\\black\\wrench-adjustable-circle-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\wrench-adjustable-circle.svg",
+      "PackagePath": "staticwebassets\\img\\black\\wrench-adjustable-circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\x-square.svg",
+      "PackagePath": "staticwebassets\\img\\black\\x-square.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\black\\x.svg",
+      "PackagePath": "staticwebassets\\img\\black\\x.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\alarm.svg",
+      "PackagePath": "staticwebassets\\img\\white\\alarm.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\arrow-return-left.svg",
+      "PackagePath": "staticwebassets\\img\\white\\arrow-return-left.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\arrow-right-circle-fill.svg",
+      "PackagePath": "staticwebassets\\img\\white\\arrow-right-circle-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\arrow-right-circle.svg",
+      "PackagePath": "staticwebassets\\img\\white\\arrow-right-circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\bar-chart-line-fill.svg",
+      "PackagePath": "staticwebassets\\img\\white\\bar-chart-line-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\bar-chart-line.svg",
+      "PackagePath": "staticwebassets\\img\\white\\bar-chart-line.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\bell-fill.svg",
+      "PackagePath": "staticwebassets\\img\\white\\bell-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\bell.svg",
+      "PackagePath": "staticwebassets\\img\\white\\bell.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\bookmarks.svg",
+      "PackagePath": "staticwebassets\\img\\white\\bookmarks.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\box-arrow-in-right.svg",
+      "PackagePath": "staticwebassets\\img\\white\\box-arrow-in-right.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\broadcast.svg",
+      "PackagePath": "staticwebassets\\img\\white\\broadcast.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\calendar-week-fill.svg",
+      "PackagePath": "staticwebassets\\img\\white\\calendar-week-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\calendar-week.svg",
+      "PackagePath": "staticwebassets\\img\\white\\calendar-week.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\chat-dots-fill.svg",
+      "PackagePath": "staticwebassets\\img\\white\\chat-dots-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\chat-left-dots-fill.svg",
+      "PackagePath": "staticwebassets\\img\\white\\chat-left-dots-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\chat-left-dots.svg",
+      "PackagePath": "staticwebassets\\img\\white\\chat-left-dots.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\check2-square.svg",
+      "PackagePath": "staticwebassets\\img\\white\\check2-square.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\clipboard-data.svg",
+      "PackagePath": "staticwebassets\\img\\white\\clipboard-data.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\clock.svg",
+      "PackagePath": "staticwebassets\\img\\white\\clock.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\cloud-plus-fill.svg",
+      "PackagePath": "staticwebassets\\img\\white\\cloud-plus-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\cloud-plus.svg",
+      "PackagePath": "staticwebassets\\img\\white\\cloud-plus.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\cone-striped.svg",
+      "PackagePath": "staticwebassets\\img\\white\\cone-striped.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\currency-dollar — kopia.svg",
+      "PackagePath": "staticwebassets\\img\\white\\currency-dollar — kopia.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\currency-dollar.svg",
+      "PackagePath": "staticwebassets\\img\\white\\currency-dollar.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\envelope-check.svg",
+      "PackagePath": "staticwebassets\\img\\white\\envelope-check.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\extinguisher-fill.svg",
+      "PackagePath": "staticwebassets\\img\\white\\extinguisher-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\file-earmark-lock2.svg",
+      "PackagePath": "staticwebassets\\img\\white\\file-earmark-lock2.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\file-earmark-pdf-fill.svg",
+      "PackagePath": "staticwebassets\\img\\white\\file-earmark-pdf-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\file-earmark-pdf.svg",
+      "PackagePath": "staticwebassets\\img\\white\\file-earmark-pdf.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\file-earmark-person.svg",
+      "PackagePath": "staticwebassets\\img\\white\\file-earmark-person.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\gear-fill.svg",
+      "PackagePath": "staticwebassets\\img\\white\\gear-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\gear-wide-connected.svg",
+      "PackagePath": "staticwebassets\\img\\white\\gear-wide-connected.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\link.svg",
+      "PackagePath": "staticwebassets\\img\\white\\link.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\list-ul.svg",
+      "PackagePath": "staticwebassets\\img\\white\\list-ul.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\list.svg",
+      "PackagePath": "staticwebassets\\img\\white\\list.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\nut-fill.svg",
+      "PackagePath": "staticwebassets\\img\\white\\nut-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\nut.svg",
+      "PackagePath": "staticwebassets\\img\\white\\nut.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\pencil-square.svg",
+      "PackagePath": "staticwebassets\\img\\white\\pencil-square.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\people-fill.svg",
+      "PackagePath": "staticwebassets\\img\\white\\people-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\people.svg",
+      "PackagePath": "staticwebassets\\img\\white\\people.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\person-check-fill.svg",
+      "PackagePath": "staticwebassets\\img\\white\\person-check-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\person-check.svg",
+      "PackagePath": "staticwebassets\\img\\white\\person-check.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\person-fill.svg",
+      "PackagePath": "staticwebassets\\img\\white\\person-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\person-lines-fill.svg",
+      "PackagePath": "staticwebassets\\img\\white\\person-lines-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\person.svg",
+      "PackagePath": "staticwebassets\\img\\white\\person.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\plus-circle-fill.svg",
+      "PackagePath": "staticwebassets\\img\\white\\plus-circle-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\printer.svg",
+      "PackagePath": "staticwebassets\\img\\white\\printer.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\qr-code-scan.svg",
+      "PackagePath": "staticwebassets\\img\\white\\qr-code-scan.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\safe2-fill.svg",
+      "PackagePath": "staticwebassets\\img\\white\\safe2-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\save.svg",
+      "PackagePath": "staticwebassets\\img\\white\\save.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\search.svg",
+      "PackagePath": "staticwebassets\\img\\white\\search.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\sk.svg",
+      "PackagePath": "staticwebassets\\img\\white\\sk.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\speedometer2.svg",
+      "PackagePath": "staticwebassets\\img\\white\\speedometer2.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\stopwatch-fill.svg",
+      "PackagePath": "staticwebassets\\img\\white\\stopwatch-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\three-dots-vertical.svg",
+      "PackagePath": "staticwebassets\\img\\white\\three-dots-vertical.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\three-dots.svg",
+      "PackagePath": "staticwebassets\\img\\white\\three-dots.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\trash.svg",
+      "PackagePath": "staticwebassets\\img\\white\\trash.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\truck.svg",
+      "PackagePath": "staticwebassets\\img\\white\\truck.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\wind.svg",
+      "PackagePath": "staticwebassets\\img\\white\\wind.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\wrench-adjustable-circle.svg",
+      "PackagePath": "staticwebassets\\img\\white\\wrench-adjustable-circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\x-square.svg",
+      "PackagePath": "staticwebassets\\img\\white\\x-square.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\img\\white\\x.svg",
+      "PackagePath": "staticwebassets\\img\\white\\x.svg"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\signalR\\jquery.signalr-2.2.0.min.js",
+      "PackagePath": "staticwebassets\\lib\\signalR\\jquery.signalr-2.2.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kr1p0\\Desktop\\SK-Q3\\SK\\wwwroot\\lib\\signalR\\signalr.min.js",
+      "PackagePath": "staticwebassets\\lib\\signalR\\signalr.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.SK.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.SK.props",
+      "PackagePath": "build\\SK.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.SK.props",
+      "PackagePath": "buildMultiTargeting\\SK.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.SK.props",
+      "PackagePath": "buildTransitive\\SK.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

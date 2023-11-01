@@ -1,0 +1,15 @@
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+
+namespace SK.Pages
+{
+    public class LogoutModel : PageModel
+    {
+        public async Task<IActionResult> OnGet()
+        {
+            await HttpContext.SignOutAsync("Ciastko");
+            return RedirectToPage("/index");
+        }
+    }
+}

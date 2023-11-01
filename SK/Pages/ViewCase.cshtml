@@ -1,0 +1,210 @@
+﻿@page
+@model SK.Pages.ViewCaseModel
+@{
+}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+<body >
+    <div class="goBackContainer" style="">
+        <a  asp-page="/caseoverview"><img class="timeIsUpRowImg" style="height:1.2em" src = "../img/black/arrow-left.svg"></a>
+         <hr />
+    </div>
+   
+    <form method="post" >
+        <div class="kr1CustomInputOuterContainer">
+
+            <div class="row">
+                    <div class="col">
+                        <div class="kr1CustomInputContainer " 
+                        onclick="kr1CustomInputFocusIn(this)" 
+                        onfocusout="kr1CustomInputFocusIn(this)">
+                            <span class="kr1CustomPlaceholder" >Imie</span>
+                            <input type="text"  class="kr1CustomInput" 
+                                readonly asp-for="Case.FirstName"  />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="kr1CustomInputContainer " 
+                        onclick="kr1CustomInputFocusIn(this)" 
+                        onfocusout="kr1CustomInputFocusIn(this)">
+                            <span class="kr1CustomPlaceholder" >Nazwisko</span>
+                            <input type="text"  class="kr1CustomInput" 
+                                readonly asp-for="Case.LastName" />
+                        </div>
+                    </div>
+              </div>
+
+              <div class="row">
+                    <div class="col">
+                        <div class="kr1CustomInputContainer " 
+                        onclick="kr1CustomInputFocusIn(this)" 
+                        onfocusout="kr1CustomInputFocusIn(this)">
+                            <span class="kr1CustomPlaceholder" >Telefon</span>
+                            <input type="text"  class="kr1CustomInput" 
+                                readonly asp-for="Case.Telephone" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="kr1CustomInputContainer " 
+                        onclick="kr1CustomInputFocusIn(this)" 
+                        onfocusout="kr1CustomInputFocusIn(this)">
+                            <span class="kr1CustomPlaceholder" >Numer indywidualny</span>
+                            <input type="text"  class="kr1CustomInput" 
+                                readonly asp-for="Case.UnigueNumber" />
+                        </div>
+                    </div>
+              </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="kr1CustomInputContainer " 
+                        onclick="kr1CustomInputFocusIn(this)" 
+                        onfocusout="kr1CustomInputFocusIn(this)">
+                            <span class="kr1CustomPlaceholder" >Producent</span>
+                            <input type="text"  class="kr1CustomInput" 
+                                readonly asp-for="Case.Manufacturer" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="kr1CustomInputContainer " 
+                        onclick="kr1CustomInputFocusIn(this)" 
+                        onfocusout="kr1CustomInputFocusIn(this)">
+                            <span class="kr1CustomPlaceholder" >Model</span>
+                            <input type="text"  class="kr1CustomInput"
+                                readonly asp-for="Case.Model" />
+                        </div>
+                    </div>
+              </div>
+
+          
+
+              <div class="row" >
+
+                <div class="col" >
+                    <div class="kr1CustomInputContainer " 
+                    onclick="kr1CustomInputFocusIn(this)" 
+                    onfocusout="kr1CustomInputFocusIn(this)">
+                        <span class="kr1CustomPlaceholder" >Data zgłoszenia</span>
+                        <input type="date"  class="kr1CustomInput allowShortInput " 
+                            readonly asp-for="Case.StartDate" />
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="kr1CustomInputContainer " 
+                    onclick="kr1CustomInputFocusIn(this)" 
+                    onfocusout="kr1CustomInputFocusIn(this)">
+                        <span class="kr1CustomPlaceholder" >Czas zgłoszenia</span>
+                        <input type="time"  class="kr1CustomInput allowShortInput " 
+                            readonly asp-for="Case.StartTimeOnly" />
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="kr1CustomInputContainer " 
+                    onclick="kr1CustomInputFocusIn(this)" 
+                    onfocusout="kr1CustomInputFocusIn(this)">
+                        <span class="kr1CustomPlaceholder" >Termin data</span>
+                        <input type="date"  class="kr1CustomInput allowShortInput " 
+                            readonly asp-for="Case.EndDate" />
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="kr1CustomInputContainer " 
+                    onclick="kr1CustomInputFocusIn(this)" 
+                    onfocusout="kr1CustomInputFocusIn(this)">
+                        <span class="kr1CustomPlaceholder" >Termin czas</span>
+                        <input type="time"  class="kr1CustomInput allowShortInput " 
+                            readonly asp-for="Case.EndTimeOnly" />
+                    </div>
+                </div>
+
+                 <div class="col">
+                        <div class="kr1CustomInputContainer " 
+                        onclick="kr1CustomInputFocusIn(this)" 
+                        onfocusout="kr1CustomInputFocusIn(this)">
+                            <span class="kr1CustomPlaceholder" >Adres email</span>
+                            <input type="text"  class="kr1CustomInput" 
+                                readonly asp-for="Case.Email" />
+                        </div>
+                 </div>
+
+              </div>
+
+
+              <div class="row">
+                <div class="col">
+                    <div class="kr1CustomInputContainer">
+                        <textarea type="text" placeholder="Opis" class="kr1CustomTextArea" rows="6" 
+                            readonly asp-for="Case.Description" ></textarea>
+                    </div>
+                </div>
+              </div>
+
+
+
+
+
+        <div style="display:grid">
+            <div class="col mb-2 displayUploadedImgCaseTableContainer">
+                        <div id="displayUploadedImgEdit">
+                            @for(int i = 0; i < Model.ImageObjLi.Count; i++)
+                            {
+                                <div >
+                                    <a href="javascript:openBase64InNewTab('@(Convert.ToBase64String(@Model.ImageObjLi[i].ImageBytes))')" > 
+                                         <img class="caseTableImages" src="data:image/jpg;base64,@(Convert.ToBase64String(@Model.ImageObjLi[i].ImageBytes))"> 
+                                    </a>
+                                </div>
+                            }
+                        </div>
+                  </div>
+
+            <div class="tableButtonsContainer">
+                <div class="tableButtonCell">
+                    <a class="btn  tableButtonCheck"
+                            title="Niekatywny" href="javascript:markTableRow('@Model.SelectedId', '@Model.Case.Status' , 'viewCasePage' )"></a>
+                </div>
+                <div class="tableButtonCell">
+                    <a  class="btn tableButtonhighlight"
+                            title="Wyróżnij" href="javascript:hilightCase('@Model.SelectedId' , '@Model.Case.Status', 'viewCasePage'  )"></a>
+                </div>
+                <div class="tableButtonCell">
+                    <a  class="btn  tableButtonEdit" asp-route-SelectedId="@Model.SelectedId" asp-page="/EditCase"
+                            title="Edytuj"></a>
+                </div>
+
+
+                                       
+                    <div class="dropdown">
+                        <div class="tableButtonCell">
+                        <button class="btn tableButtonPrint dropdown-toggle"
+                                title="Drukuj" data-bs-toggle="dropdown" aria-expanded="false">
+                        </button>
+
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a asp-route-SelectedId="@Model.SelectedId" target="_blank" asp-route-SelectedPrintType="smallPrint" asp-page="/PrintCase">Identyfikator</a></li>
+                                <li><a asp-route-SelectedId="@Model.SelectedId" target="_blank" asp-route-SelectedPrintType="printAll" asp-page="/PrintCase">Wszystkie dane</a></li>
+                        </ul>
+                    </div>
+
+                     <div class="tableButtonCell">
+                        <a id="" class="btn tableButtonDelete"
+                                title="Usuń"  href="javascript:removeCase('@Model.SelectedId' , 'viewCasePage' )"></a>
+                    </div>
+
+                </div>
+            </div>
+        
+  
+        </div>
+       </div>
+   
+    </form> 
+
+</body>
+
