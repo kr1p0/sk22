@@ -1,0 +1,260 @@
+﻿@page
+@model SK.Pages.PrintCaseModel
+@using SK.Models;
+
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+<script>
+
+    function onloadQrPreview() {
+        let textArea = document.getElementById("printTextArea");
+        if(textArea!=null){
+              textArea.style.height = "auto";
+        textArea.style.height = textArea.scrollHeight + 20 + "px";
+
+        }
+      
+
+        document.getElementById("generatedGrcodeTrueSize").innerHTML = "";
+
+        var itemLocation = location.toString()
+        itemLocation = itemLocation.substring(0, itemLocation.indexOf('PrintCase'));
+        itemLocation += "viewcase?SelectedId=" + document.getElementById("selecetedCaseId2QrPrint").value;
+
+
+        new QRCode(document.getElementById("generatedGrcodeTrueSize"), {
+            text: itemLocation,
+            //width: sessionStorage.getItem("qrWidthValue"),
+            //height: sessionStorage.getItem("qrHightValue"),
+            width: 175,
+            height: 175,
+            colorDark: "#000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+        try {
+            new QRCode(document.getElementById("generatedGrcodeTrueSize2"), {
+            text: itemLocation,
+            //width: sessionStorage.getItem("qrWidthValue"),
+            //height: sessionStorage.getItem("qrHightValue"),
+            width: 175,
+            height: 175,
+            colorDark: "#000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+        }
+        catch (error){
+            console.log(error)
+        }
+         
+
+
+        window.print();
+    }
+   
+
+    
+    //window.onafterprint = function () {
+      
+    //}
+    window.addEventListener('afterprint', (event) => {
+        sessionStorage.clear();
+        window.close();
+    });
+  
+</script>
+
+<body id="printPageBody" onload="onloadQrPreview()">
+<input type="hidden" id="selecetedCaseId2QrPrint"  value=@Model.SelectedId />
+
+    @if(Model.SelectedPrintType == "smallPrint" || Model.SelectedPrintType == "smallPrintx2")
+    {
+    <div class="row printDocContainer">
+        <p>FHU Stara Kuźnia</p>
+
+         <div class="col "></div>
+    
+         <div class="col ">
+            <div  id="generatedGrcodeTrueSize"></div>
+        </div>
+    
+        <div class="col printPageMiddleRightCol">
+       
+            <div class="">
+                 <label for="printPageInput1">Numer identyfikacyjny</label>
+                 <br />
+                <input id="printPageInput1" readonly value="@Model.Case.UnigueNumber"/>
+            </div>
+      
+            <div class="">
+                   <label  for="printPageInput2">Data utworzenia</label>
+                    <br />
+                  <input id="printPageInput2" readonly value="@CustomStr.Adjust(Model.Case.StartDate,25)"/>
+            </div>
+         
+            <div class="">
+                <label for="printPageInput3">Termin</label>
+                 <br />
+                <input id="printPageInput3" readonly value="@CustomStr.Adjust(Model.Case.EndDate,25)"/>
+            </div>
+       
+        </div>
+
+        <!--
+        <div class="col printPageRightRightCol">  
+              <span>Podpis</span> 
+        </div>
+        -->
+        <div class="col "></div>
+
+    </div>
+    }
+  
+     @if(Model.SelectedPrintType == "smallPrintx2")
+     {
+         <div style="border-bottom:dashed 2px #888; width:100%; margin: 40px 0"></div>
+
+        <div class="row printDocContainer">
+        <p>FHU Stara Kuźnia</p>
+
+         <div class="col "></div>
+    
+         <div class="col ">
+            <div  id="generatedGrcodeTrueSize2"></div>
+        </div>
+    
+        <div class="col printPageMiddleRightCol">
+       
+            <div class="">
+                 <label for="printPageInput1">Numer identyfikacyjny</label>
+                 <br />
+                <input id="printPageInput1" readonly value="@Model.Case.UnigueNumber"/>
+            </div>
+      
+            <div class="">
+                   <label  for="printPageInput2">Data utworzenia</label>
+                    <br />
+                  <input id="printPageInput2" readonly value="@CustomStr.Adjust(Model.Case.StartDate,25)"/>
+            </div>
+         
+            <div class="">
+                <label for="printPageInput3">Termin</label>
+                 <br />
+                <input id="printPageInput3" readonly value="@CustomStr.Adjust(Model.Case.EndDate,25)"/>
+            </div>
+       
+        </div>
+
+        <!--
+        <div class="col printPageRightRightCol">  
+              <span>Podpis</span> 
+        </div>
+        -->
+        <div class="col "></div>
+
+    </div>
+     }
+
+
+
+    @if(Model.SelectedPrintType == "printAll")
+    {
+       
+
+
+        <div class=" printSecondPageMainCol row">
+
+           <div class="col">
+               <span>FHU Stara Kuźnia</span>
+               <br /> <br />  <br />
+              
+               <div class="printPageInputContainer">
+                    <input  readonly value="@CustomStr.Adjust(Model.Case.FirstName,40)"/>
+                    <br />
+                    <label >Imię</label>
+                </div>
+         
+               <div class="printPageInputContainer">
+                    <input  readonly value="@CustomStr.Adjust(Model.Case.LastName,40)"/>
+                    <br/>
+                    <label >Nazwisko</label>
+                </div>
+
+                <div class="printPageInputContainer">
+                    <input  readonly value="@CustomStr.Adjust(Model.Case.Telephone,40)"/>
+                    <br />
+                    <label>Telefon</label>
+                </div>
+         
+               <div class="printPageInputContainer">
+                   
+                    <input  readonly value="@CustomStr.Adjust(Model.Case.Email,40)"/>
+                    <br />
+                    <label >Email</label>
+                   
+                </div>
+
+                <div class="printPageInputContainer">
+                    <input readonly  value="@CustomStr.Adjust(Model.Case.Manufacturer,40)"/>
+                    <br />
+                    <label >Producent</label>
+                  
+                </div>
+         
+               <div class="printPageInputContainer">
+                    <input  readonly  value="@CustomStr.Adjust(Model.Case.Model,40)"/>
+                    <br />
+                    <label >Model</label>
+                    
+                </div>
+
+                <div class="printPageInputContainer">
+                    <input  readonly value="@CustomStr.Adjust(Model.Case.UnigueNumber,40)"/>
+                    <br />
+                    <label >Numer identyfikacyjny</label>
+                   
+                </div>
+         
+             
+
+           </div>
+
+           <div class="col" style=" margin-top:30px " >
+                 <div style="float:right;">
+                    
+                     <div  id="generatedGrcodeTrueSize" style="margin-bottom:90px"></div>
+                    
+                    <div class="printPageInputContainer">
+                        <input  readonly value="@CustomStr.Adjust(Model.Case.StartDate,40)"/>
+                        <br />
+                        <label >Data utworzenia</label>
+                    </div>
+         
+                    <div class="printPageInputContainer">
+                        <input  readonly  value="@CustomStr.Adjust(Model.Case.EndDate,40)"/>
+                        <br />
+                        <label >Termin</label>
+                    </div>
+
+                     <div class="printPageInputContainer">
+                        <input  readonly  value="@CustomStr.Adjust(Model.Case.CompletedDate,40)"/>
+                        <br />
+                        <label >Zrealizowano</label>
+                    </div>
+                </div>
+            
+
+           </div>
+
+        </div>
+        
+        <div>
+            <br />
+            <textarea readonly style="width:100%; margin-top:30px"
+            id="printTextArea">@Model.Case.Description</textarea>
+          
+        </div>
+    }
+
+</body>

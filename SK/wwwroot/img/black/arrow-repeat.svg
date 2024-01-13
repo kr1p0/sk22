@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   fill="currentColor"
+   class="bi bi-arrow-repeat"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="arrow-repeat.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:d="https://loading.io/stock/">
+  <defs
+     id="defs10">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5023">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5019" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop5021" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4931">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4927" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop4929" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4931"
+       id="linearGradient4933"
+       x1="47"
+       y1="43.55"
+       x2="73.200577"
+       y2="59.400234"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5023"
+       id="linearGradient5025"
+       x1="33.548553"
+       y1="83.227234"
+       x2="53"
+       y2="49.27705"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     inkscape:zoom="35.974058"
+     inkscape:cx="1.5288795"
+     inkscape:cy="13.607028"
+     inkscape:window-width="2560"
+     inkscape:window-height="1653"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <g
+     class="ldl-scale"
+     id="g12"
+     transform="matrix(0.27183572,0,0,-0.27183572,-5.5131649,21.611442)"
+     style="fill:#000000">
+    <path
+       fill="#f47e5f"
+       d="m 53,74.7 c 0,-1.6 -1.3,-3 -3,-3 -7.9,0 -15.3,-4.3 -19.1,-11.3 -1.7,-3.2 -2.7,-6.8 -2.7,-10.4 0,-4 1.1,-7.9 3.2,-11.3 0.9,-1.4 0.4,-3.2 -1,-4.1 -1.4,-0.9 -3.2,-0.4 -4.1,1 -2.6,4.3 -4,9.3 -4,14.4 0,4.6 1.2,9.2 3.4,13.3 4.9,8.9 14.2,14.4 24.3,14.4 1.6,0 3,-1.4 3,-3 z"
+       style="fill:url(#linearGradient5025);fill-opacity:1"
+       id="path6" />
+    <path
+       fill="#f47e5f"
+       d="m 47,25.3 c 0,1.6 1.3,3 3,3 7.6,0 14.6,3.9 18.6,10.4 2.1,3.4 3.2,7.3 3.2,11.3 0,3.6 -0.9,7.3 -2.7,10.4 -0.8,1.4 -0.3,3.2 1.2,4 0.5,0.2 0.9,0.4 1.4,0.4 1,0 2.1,-0.6 2.6,-1.5 2.2,-4 3.4,-8.6 3.4,-13.3 0,-5.1 -1.4,-10.1 -4,-14.4 -5.1,-8.3 -14,-13.3 -23.7,-13.3 -1.6,0 -3,1.4 -3,3 z"
+       style="fill:url(#linearGradient4933);fill-opacity:1"
+       id="path8" />
+    <metadata
+       id="metadata10">
+      <d:name
+         style="animation-play-state:paused">ring</d:name>
+      <d:tags
+         style="animation-play-state:paused">onion,tree ring,curve bar,circle,concentric,c,round,bracket,ring,spinner</d:tags>
+      <d:license
+         style="animation-play-state:paused">by</d:license>
+      <d:slug
+         style="animation-play-state:paused">d47xk2</d:slug>
+    </metadata>
+  </g>
+</svg>

@@ -1,0 +1,1199 @@
+﻿
+:root {
+    --sidebarColor: #0d2951;
+    --upperBarColor: transparent;
+    --upperMenuBtn: #tranaparent;
+    --upperMenuBtnFontColor: #2b343d;
+    --tableBtn: transparent;
+    --tableBtnFontColor: #000;
+    --financesStatBoxColor: url("/img/black/pie-chart-fill-custom.svg"), linear-gradient(to bottom, #e4e5e9,#e4e5e9);
+    --financesMoneyBoxColor: url("/img/black/currency-dollar-oryg-custom.svg"), linear-gradient(to bottom, #e4e5e9,#e4e5e9);
+    --bodyColor: #EAEBEF;
+    --customYellowBtnClr: #bbb;
+    --inputbackground: #e0e1e6;
+}
+
+html body {
+    background-color: #EAEBEF;
+}
+
+/*
+.navbar {
+    background-color: #f87f73;
+    background-image: -webkit-linear-gradient( -28deg, #f87f73 0%, #f87f73 60%, #292423 60%, #292423 60%);
+    background-image: linear-gradient( -28deg, #f87f73 0%, #f87f73 60%, #292423 60%, #292423 60%);
+}
+*/
+#caseNotifiEdit, #caseNotifi, #caseNotifiView {
+    transform: scale(1.3);
+    accent-color: #ffffff;
+}
+
+.goBackContainer {
+    width: 100%;
+    text-align: right;
+}
+
+    .goBackContainer a {
+        margin-right: 13px;
+        color: #000;
+        font-size: 1.05em;
+    }
+
+
+
+.loginFormContainer {
+    width: 100%;
+    min-width: 300px;
+    margin-top: 100px;
+}
+
+    .loginFormContainer > div {
+        max-width: 550px;
+        width: 100%;
+        position: relative;
+    }
+
+
+
+.loginFormLeftColumn {
+    width: 20%;
+    background-color: #192c3b;
+    background-image: url("/img/white/box-arrow-in-right.svg");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    border-radius: 20px 0 0 20px;
+    border: 12px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+.loginFormLeftColumnAlternativeBackgroundImage {
+    background-image: url("/img/white/envelope-check.svg");
+    border: 20px solid transparent;
+}
+
+.loginFormRightColumn {
+    float: right;
+    width: 80%;
+    min-width: 250px;
+    background-color: #fff;
+    border-radius: 0 20px 20px 0;
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+
+#loginFormSubmitBtnContainer {
+    margin-top: 15px;
+}
+
+
+#passRecoveryFormSubmitBtn {
+    display: none;
+    background-color: #4cd49c !important;
+    color: white;
+    padding: 0.4em 1.2em;
+    font-weight: 500;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#loginFormSubmitBtn {
+    background-color: #48d99d !important;
+    color: white;
+    padding: 0.4em 1.2em;
+    font-weight: 500;
+    border: 0;
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+
+.loginFormRightColumn a {
+    font-weight: 500;
+}
+
+    .loginFormRightColumn a:link {
+        color: #192c3b;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+        .loginFormRightColumn a:link:visited {
+            color: #192c3b;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .loginFormRightColumn a:link:hover {
+            color: #475f72;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .loginFormRightColumn a:link:active {
+            color: #192c3b;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+
+.collapsedContainer{
+  
+}
+
+
+.center {
+    margin: 15px 0;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.wave {
+    width: 9px;
+    height: 55px;
+    background: linear-gradient(180deg, #aaa, #ccc);
+    margin: 10px;
+    animation: wave 1s linear infinite;
+    border-radius: 10px;
+}
+
+    .wave:nth-child(2) {
+        animation-delay: 0.1s;
+    }
+
+    .wave:nth-child(3) {
+        animation-delay: 0.2s;
+    }
+
+    .wave:nth-child(4) {
+        animation-delay: 0.3s;
+    }
+
+    .wave:nth-child(5) {
+        animation-delay: 0.4s;
+    }
+
+    .wave:nth-child(6) {
+        animation-delay: 0.5s;
+    }
+
+    .wave:nth-child(7) {
+        animation-delay: 0.6s;
+    }
+
+    .wave:nth-child(8) {
+        animation-delay: 0.7s;
+    }
+
+    .wave:nth-child(9) {
+        animation-delay: 0.8s;
+    }
+
+    .wave:nth-child(10) {
+        animation-delay: 0.9s;
+    }
+
+@keyframes wave {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.displayUploadedImgCaseTableContainer {
+    border-bottom: dashed 2px #aaa;
+    padding-bottom: 1.6em;
+}
+
+.displayUploadedImgCaseTable img, #displayUploadedImgEdit img, #displayUploadedImg img {
+    height: 80px;
+    display: inline-flex;
+    float: left;
+    margin: 0.3em;
+    border-radius: 6px;
+}
+
+#displayUploadedImgEdit > div {
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+}
+
+#displayUploadedImgEdit span {
+    margin-top: -5px;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #e22a4c;
+    background-image: url("/img/white/x.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+    #displayUploadedImgEdit span:hover {
+        background-color: #ff002f;
+    }
+
+
+.upperMenuBar {
+    background-color: var(--upperBarColor);
+    padding: 8px 8px;
+    border-radius: 6px;
+    margin-bottom: -10px;
+    display: flex;
+    position: relative;
+}
+
+
+
+    .upperMenuBar a:first-child, .upperMenuBar a:nth-child(2), .upperMenuBar input[type="submit"]:first-child, .upperMenuBar button:first-child {
+        align-items: center;
+        background: var(--upperMenuBtn);
+        border: 0;
+        box-sizing: border-box;
+        color: var(--upperMenuBtnFontColor) !important;
+        display: inline-flex;
+        font-family: Inter, sans-serif;
+        font-size: 1em;
+        font-weight: 600;
+        height: 45px;
+        justify-content: center;
+        line-height: 24px;
+        overflow-wrap: break-word;
+        padding: 0 24px;
+        text-decoration: none;
+        width: auto;
+        border-radius: 8px;
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+
+
+    .upperMenuBar input:first-child {
+        height: 48px;
+        background-color: #f1f1f3;
+        border-radius: 5px;
+    }
+
+#searchCaseTable {
+    max-width: 350px !important;
+    width: calc(100% - 14px) !important;
+    border: 0;
+}
+
+    #searchCaseTable:focus {
+        outline: none;
+    }
+
+
+
+.kr1CustomInputOuterContainer {
+    width: 100%;
+    padding: 0 5%;
+    position: relative;
+}
+
+.kr1CustomInputContainer {
+    height: fit-content;
+    padding: 0.6em 0.3em;
+}
+
+.kr1CustomPlaceholder {
+    margin: 0 0 0 15px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    transition: 400ms;
+    pointer-events: none;
+}
+
+.kr1CustomInput {
+    height: 3.3em;
+    transition: 400ms;
+    padding: 10px 0.9em 0 0.9em;
+    border: 0;
+    border-radius: 7px;
+    width: 100%;
+    min-width: 240px;
+    background-color: var(--inputbackground);
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.1);
+}
+
+.allowShortInput {
+    min-width: 200px !important;
+}
+
+.addDateToTextarea {
+    border: 0;
+    font-weight: 500;
+    background-color: transparent;
+    float: right;
+    margin-right: -10px;
+}
+
+
+    .addDateToTextarea img {
+        height: 1.1em;
+        margin-top: -3px;
+    }
+
+
+.kr1CustomTextArea, .kr1CustomTextArea2 {
+    transition: 400ms;
+    padding: 0 0 0 0.8em;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    min-width: 240px;
+    background-color: var(--inputbackground);
+    min-height: 3em;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.1);
+}
+
+.kr1CustomTextArea2 {
+    background-color: #fff;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.1);
+}
+
+.kr1SpanOnFocus {
+    margin-top: -1.3em !important;
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+
+.customInputGroup {
+    height: fit-content;
+    padding: 0.8em 0.5em;
+    min-width: 240px;
+}
+
+    .customInputGroup > input {
+        height: 3.3em;
+        transition: 400ms;
+        border: 0;
+        border-radius: 7px;
+        width: 100%;
+        min-width: 240px;
+        background-color: var(--inputbackground) !important;
+    }
+
+.imageUpload > input {
+    display: none;
+}
+
+#searchCaseTable {
+    max-width: 350px !important;
+    width: calc(100% - 14px) !important;
+    background-color: #fff;
+    padding: 0 5px;
+    float: right;
+    width: 40%;
+    min-width: 58px;
+    min-height: 40px;
+    border-radius: 6px;
+}
+
+
+.tableDefault {
+    font-weight: 600;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+    background-color: transparent !important;
+    /*border-bottom: 4px solid #e9ecee;*/
+}
+
+    .tableDefault td:empty {
+        display: none;
+    }
+
+    .tableDefault th {
+        padding: .50em .25em;
+        text-align: center;
+        color: #000;
+        text-transform: uppercase;
+        font-family: monospace; /*sans-serif Century Gothic*/
+    }
+
+    .tableDefault td {
+        white-space: nowrap;
+        padding: 0.8em .25em;
+        text-align: center;
+    }
+
+
+        .tableDefault td:nth-child(even) {
+            cursor: pointer;
+        }
+
+        .tableDefault td:last-child {
+            padding-right: 8px;
+        }
+
+
+    .tableDefault tr {
+        padding: .35em;
+        text-align: center;
+    }
+
+    
+
+.rowLeftNoti {
+    height: 70%;
+    width: 10px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 5px;
+    border-radius: 6px;
+}
+
+.checkedRowImg {
+    height: 2em;
+}
+
+.checkedRowOpacity {
+}
+
+
+.highlightedRow {
+    background-color: #ced9dd !important;
+}
+
+.timeIsUpRowImg {
+    height: 2em;
+}
+
+
+
+.tableDefault tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+.tableDefault tbody tr:nth-child(even) {
+    background-color: transparent;
+}
+
+.tableDefault tbody tr:nth-child(odd):hover {
+    /*background-color: #dadbdf;*/
+}
+
+
+
+
+
+.seperateRow {
+    border-collapse: separate !important;
+    border-spacing: 0 0.6em !important;
+}
+
+    .seperateRow th {
+        background-color: var(--bodyColor) !important;
+    }
+
+    .seperateRow td:first-child {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .seperateRow td:last-child {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+.tableButtonsContainer {
+    position: relative;
+    margin: 0 0.5em 0.4em 0.5em;
+}
+
+
+
+.tableButtonCell a, .altrnativetableButtonCell a,
+.tableButtonCell input, .altrnativetableButtonCell input,
+.tableButtonCell button, .altrnativetableButtonCell button {
+    margin: 0.5em 1em 2em 0;
+    float: left;
+    align-items: center;
+    background-color: var(--tableBtn);
+    /*border: 0 solid #E2E8F0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        */
+    box-sizing: border-box;
+    color: var(--tableBtnFontColor) !important;
+    font-family: Inter, sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 0;
+    overflow-wrap: break-word;
+    padding: 11px 16px;
+    text-decoration: none;
+    width: auto;
+    min-width: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+
+.tableButtonCell > .tableButtonEdit {
+    background-image: url("/img/black/pencil-square.svg");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: 7px solid var(--tableBtn);
+    transition: all ease-in-out 0.3s;
+}
+
+
+.tableButtonCell > .tableButtonDelete {
+    background-image: url("/img/white/trash.svg");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: 7px solid var(--tableBtn);
+    transition: all ease-in-out 0.3s;
+    background-color: #de3e5b;
+    border-color: #de3e5b;
+    color: #fff !important;
+}
+
+.tableButtonCell > .tableButtonSaveTextArea {
+    background-image: url("/img/black/pencil-check.svg");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: 7px solid var(--tableBtn);
+    transition: all ease-in-out 0.5s;
+    background-color: #8deea3;
+    display: none;
+}
+
+.tableButtonCell > .tableButtonCheck {
+    background-image: url("/img/black/check2-square.svg");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: 7px solid var(--tableBtn);
+    transition: all ease-in-out 0.3s;
+}
+
+.tableButtonCell > .tableButtonhighlight {
+    background-image: url("/img/black/bookmarks.svg");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: 7px solid var(--tableBtn);
+    transition: all ease-in-out 0.3s;
+}
+
+.tableButtonCell > .tableButtonSave {
+    background-image: url("/img/black/save.svg");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: 7px solid var(--tableBtn);
+    transition: all ease-in-out 0.3s;
+    font-size: 1.1em;
+}
+
+.tableButtonCell > .tableButtonAddImage {
+    background-image: url("/img/black/cloud-plus-fill.svg");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: 7px solid var(--tableBtn);
+    transition: all ease-in-out 0.3s;
+    background-size: 1.8em;
+    font-size: 1.1em;
+}
+
+.tableButtonCell > .tableButtonPrint {
+    background-image: url("/img/black/printer.svg");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: 7px solid var(--tableBtn);
+    transition: all ease-in-out 0.3s;
+}
+
+
+.tableButtonCheck:hover, .tableButtonEdit:hover, .tableButtonDelete:hover, .tableButtonhighlight:hover,
+.tableButtonPrint:hover, .tableButtonAddImage:hover, .tableButtonAddImage:hover, .tableButtonSave:hover,
+.tableButtonSaveTextArea:hover {
+    opacity: 0.6;
+}
+
+/*
+.tableButtonCheck:hover:after {
+    content: attr(title);
+}
+.tableButtonEdit:hover:after {
+    content: attr(title);
+}
+.tableButtonDelete:hover:after {
+    content: attr(title);
+}
+.tableButtonhighlight:hover:after {
+    content: attr(title);
+}
+*/
+
+.printDocContainer {
+}
+
+#printPageBody {
+    background-color: #fff !important;
+}
+
+    #printPageBody > div p {
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+
+.printPageMiddleRightCol label {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.printPageMiddleRightCol input {
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.printPageMiddleRightCol > div {
+    margin-bottom: 15px;
+    padding-left: 8px;
+    float: right;
+    width: fit-content;
+    border-left: solid 1.5px #999;
+}
+
+/*
+.printPageRightRightCol {
+    position:relative;
+    border: 0;
+    border-bottom: solid thin #555;
+    margin-bottom: 20px;
+}
+
+
+
+.printPageRightRightCol span{
+    position: absolute;
+    bottom:0px;
+    left:2px;
+    height:30px;
+    opacity:0.4;
+    font-size:20px
+}
+*/
+
+
+.printSecondPageMainCol {
+}
+
+    .printSecondPageMainCol label {
+        font-weight: 600;
+        font-size: 13px;
+    }
+
+    .printSecondPageMainCol input {
+        border: 0;
+        background-color: transparent;
+        font-size: 15px;
+        padding-left: 5px;
+    }
+
+
+
+    .printSecondPageMainCol span {
+        text-align: left;
+        font-size: 23px;
+        font-weight: 600;
+    }
+
+    .printSecondPageMainCol > div {
+        width: fit-content;
+    }
+
+.printPageInputContainer input {
+    border-bottom: dashed thin #999 !important;
+    width: 100%;
+    max-width: 230px;
+}
+
+.printPageInputContainer {
+    margin-bottom: 10px;
+}
+
+
+
+
+.customDropdownMenu {
+    padding: 18px !important;
+    border-radius: 7px !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+    .customDropdownMenu p {
+        border-radius: 5px;
+        background-color: #eaebed;
+        font-weight: 500
+    }
+
+.addCaseBtn {
+    margin-left: 1.3em;
+}
+
+.dictionaryWindow {
+    position: absolute;
+    background-color: #1f202bbb;
+    color: #fff;
+    bottom: -105px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: left;
+    padding: 16px 16px 0 16px;
+    align-content: center;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 2;
+}
+
+    .dictionaryWindow div {
+        width: fit-content;
+    }
+
+    .dictionaryWindow img {
+        margin-top: -4px;
+        margin-right: 5px;
+    }
+
+    .dictionaryWindow span {
+        cursor: pointer;
+    }
+
+    .dictionaryWindow div :hover {
+        color: #60d684;
+    }
+
+#changesNoti {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #000;
+}
+
+#changesNotiContainer {
+    padding: 12px;
+    margin-right: 15px;
+    font-family: monospace;
+}
+
+.changesNotiContainerCls {
+    position: relative;
+    background-image: url("/img/black/app-indicator.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.changesNotiContainerClsRed {
+    position: relative;
+    background-image: url("/img/black/app-indicator2.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#printTextArea {
+    border: 0;
+    background-color: transparent;
+    resize: none;
+    overflow: hidden;
+}
+
+#readOnlyInfo {
+    display:none;
+    z-index: 3;
+    position: fixed;
+    right: 1.5em;
+    top: 4em;
+    height: 10em;
+    width: 10em;
+    border: none;
+    background-color: transparent;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background-image: url(/img/black/database-fill-lock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border-radius: .8em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    animation: wiggle 3s 2s forwards;
+}
+
+
+
+    #readOnlyInfo svg {
+        position: absolute;
+        top: .5em;
+        right: .5em;
+        width: .9em;
+        height: .9em;
+        cursor: pointer;
+    }
+
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+@keyframes wiggle {
+    0%, 7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    35% {
+        transform: rotateZ(-4deg);
+    }
+
+    40%, 100% {
+        transform: rotateZ(0);
+    }
+}
+
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    .alternativeCaseTable {
+        display: none;
+    }
+
+    .addCaseBtn:before {
+        content: attr(title);
+    }
+
+    .dropdownMenuMenuBar:before {
+        content: 'Opcje wyswietlania';
+    }
+
+    .tableButtonCheck:before {
+        content: '\00a0\00a0\00a0 Zrealizowany';
+    }
+
+    .tableButtonSaveTextArea:before {
+        content: '\00a0\00a0\00a0 Zapisz';
+    }
+
+    .tableButtonhighlight:before {
+        content: '\00a0\00a0\00a0 Wyroznij';
+    }
+
+    .tableButtonEdit:before {
+        content: '\00a0\00a0\00a0 Edytuj';
+    }
+
+    .tableButtonPrint:before {
+        content: '\00a0\00a0\00a0 Drukuj';
+    }
+
+    .tableButtonDelete:before {
+        content: '\00a0\00a0\00a0 Usun';
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .collapsedContainer {
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 10px 5px 0 5px;
+    }
+
+    .kr1CustomInput {
+        background-color: transparent;
+        box-shadow:none;
+    }
+    .kr1CustomTextArea {
+        background-color: #e9eaef;
+    }
+
+    .kr1CustomTextArea2 {
+        background-color: #ffffff;
+        border: solid 2px rgba(3, 102, 214, 0.3);
+    }
+
+    .selectedRowBorder {
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        margin-bottom: -15px !important;
+        box-shadow: none !important;
+       
+        background-image: linear-gradient(#aaa,#aaa);
+        background-size: 80% 1px;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+    .goBackContainer {
+        position: sticky;
+        top: 11px;
+        margin-bottom: 7px;
+        z-index: 1;
+    }
+
+        .goBackContainer a {
+            background-color: #ffffffcc;
+            border-radius: 6px;
+            padding: 6px 15px 10px 13px;
+            color: black;
+            margin-right: 0;
+        }
+
+        .goBackContainer hr {
+            display: none;
+        }
+
+
+    .addCaseBtn:before {
+        content: '+';
+        font-size: 1.6em;
+        font-weight: 100
+    }
+
+    .addCaseBtn {
+        margin-left: 0;
+    }
+
+    .displayUploadedImgCaseTable img, #displayUploadedImgEdit img, #displayUploadedImg img {
+        height: 60px;
+    }
+
+    .tableButtonCheck:before, .tableButtonhighlight:before, .tableButtonEdit:before,
+    .tableButtonPrint:before, .tableButtonDelete:before, .tableButtonSaveTextArea:before {
+        content: '';
+        background-position: center;
+    }
+
+    .tableButtonCell > .tableButtonDelete {
+        background-position: center;
+    }
+
+    .tableButtonCell > .tableButtonCheck {
+        background-position: center;
+    }
+
+    .tableButtonCell > .tableButtonSaveTextArea {
+        background-position: center;
+    }
+
+    .tableButtonCell > .tableButtonhighlight {
+        background-position: center;
+    }
+
+
+    .tableButtonCell > .tableButtonPrint {
+        background-position: center;
+    }
+
+    .tableButtonCell > .tableButtonEdit {
+        background-position: center;
+    }
+
+  
+
+    .dropdownMenuMenuBar:before {
+        content: 'Opcje';
+    }
+
+    .tableDefault thead {
+        display: none !important;
+    }
+
+    .tableDefault tr:nth-child(odd) {
+        display: block;
+        margin: 0 0 0 0;
+        /*box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;*/
+        border-radius: 14px;
+        box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.1);
+    }
+
+    .tableDefault tr:nth-child(even) {
+        /*box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;*/
+        background-color: transparent !important;
+    }
+
+
+    .tableDefault td {
+        border-bottom: 0;
+        display: block;
+        text-align: center;
+    }
+
+        .tableDefault td::before {
+            content: attr(value);
+            float: left;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-right: 1em;
+        }
+
+        .tableDefault td:last-child {
+            border-bottom: 0;
+        }
+
+    .tableDefault tbody:nth-child(even) tr {
+        background-color: #fff;
+    }
+
+    .tableDefault tbody tr:hover {
+       
+    }
+
+    .caseTableFirstTd, .caseTable5Td, .caseTable4Td, .caseTable6Td {
+        display: none !important;
+    }
+
+    .kr1CustomInputOuterContainer {
+        width: 100%;
+        padding: 0;
+        position: relative;
+        /*background-color:#fff;*/
+        border-radius: 8px;
+        margin: 10px 0 30px 0;
+        
+    }
+
+    .kr1CustomInputContainer {
+        height: fit-content;
+        padding: 0.7em 0 ;
+    }
+
+    .rowLeftNoti {
+        height: 10px;
+        top: 5px;
+        left: 0;
+    }
+
+    .tableButtonCell a, .altrnativetableButtonCell a,
+    .tableButtonCell input, .altrnativetableButtonCell input,
+    .tableButtonCell button, .altrnativetableButtonCell button {
+        margin: 0.5em 0.5em 2em 0;
+    }
+
+    .pageNumberRow a {
+        margin-left: 5px;
+        font-size: 1.1em;
+    }
+
+
+    /*To prevent phone from zoom in*/
+    input[type='text'], input[type='number'], input[type='search'], textarea {
+        font-size: 16px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .loginFormLeftColumn {
+        display: none;
+    }
+
+    .loginFormRightColumn {
+        width: 100%;
+        border-radius: 12px;
+        margin-left: 2em;
+        margin-left: 2em;
+    }
+    /*To prevent phone from zoom in*/
+    input[type='text'], input[type='number'], input[type='search'], textarea {
+        font-size: 16px;
+    }
+}
+
+@media print {
+    @page {
+        width: 21cm;
+        height: 29.7cm;
+        margin: 30mm 30mm 30mm 30mm;
+        /* change the margins as you want them to be. */
+    }
+
+
+
+    .hideOnPrint {
+        display: none;
+    }
+}

@@ -1,0 +1,634 @@
+﻿@page
+@model SK.Pages.CaseOverviewModel
+@using Models;
+
+<!-- For Ajax-->
+@Html.AntiForgeryToken()
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<body onload="CaseTableOnload()">
+
+    <input id="selectedIdCaseTable" type="hidden" readonly value="@Model.SelectedId" />
+
+    @{
+        string filter0 = "";
+        string filter1 = "";
+        string filter2 = "";
+        if (@Model.CaseRadioFilter == "currentDeadline")
+            filter0 = "checked";
+        else if (@Model.CaseRadioFilter == "deadline")
+            filter1 = "checked";
+        else
+            filter2 = "checked";
+
+        string sort1 = "";
+        string sort2 = "";
+        string sort3 = "";
+        string sort4 = "";
+        if (@Model.CaseRadioSort == "name")
+            sort1 = "checked";
+        else if(@Model.CaseRadioSort == "lastName")
+            sort2 = "checked";
+        else if(@Model.CaseRadioSort == "deadline")
+            sort3 = "checked";
+        else
+            sort4 = "checked";
+
+    }
+
+   <div class="upperMenuBar">
+        <div class="dropdown">
+            <button class="btn btn-light btn-sm dropdown-toggle dropdownMenuMenuBar" type="button"
+                    aria-expanded="false" data-bs-toggle="dropdown"  id="dropdownMenuButtonCaseList">
+            </button>
+            <div class="dropdown-menu customDropdownMenu" aria-labelledby="dropdownMenuButtonCaseList">
+                <form method="get">
+                    <p class=" p-1 " >Filtruj:</p>
+
+                     <div class="custom-control custom-radio mb-1">
+                        <input type="radio" id="CaseCustomRadioFilter0" name="CaseRadioFilter"
+                               class="custom-control-input" value="currentDeadline" @filter0>
+                        <label class="custom-control-label" style="white-space:nowrap"
+                               for="CaseCustomRadioFilter0">Deadline <span 
+                               style="font-size:0.7em;border:solid thin #777;padding:3px 2px;border-radius:5px;margin-left:2px;">
+                               Aktualne</span></label>
+                    </div>
+
+                    <div class="custom-control custom-radio mb-1">
+                        <input type="radio" id="CaseCustomRadioFilter1" name="CaseRadioFilter"
+                               class="custom-control-input" value="deadline" @filter1>
+                        <label class="custom-control-label" style="white-space:nowrap"
+                               for="CaseCustomRadioFilter1">Deadline <span 
+                               style="font-size:0.7em;border:solid thin #777;padding:3px 2px;border-radius:5px;margin-left:2px;">
+                               Wszystkie</span></label>
+                    </div>
+                    <div class="custom-control custom-radio mb-1">
+                        <input type="radio" id="CaseCustomRadioFilter2" name="CaseRadioFilter"
+                               class="custom-control-input" value="all" @filter2>
+                        <label class="custom-control-label" style="white-space:nowrap"
+                               for="CaseCustomRadioFilter2">Nie filtruj</label>
+                    </div>
+
+                    <p class="p-1 mt-3">Sortuj:</p>
+                    <div class="custom-control custom-radio mb-1">
+                        <input type="radio" id="CaseCustomRadioSort1" name="CaseRadioSort" value="name"
+                               class="custom-control-input" @sort1>
+                        <label class="custom-control-label" for="CaseCustomRadioSort1">Imie</label>
+                    </div>
+                    <div class="custom-control custom-radio mb-1">
+                        <input type="radio" id="CaseCustomRadioSort2" name="CaseRadioSort" value="lastName"
+                               class="custom-control-input" @sort2>
+                        <label class="custom-control-label" for="CaseCustomRadioSort2">Nazwisko</label>
+                    </div>
+                    <div class="custom-control custom-radio mb-1">
+                        <input type="radio" id="CaseCustomRadioSort3" name="CaseRadioSort" value="startDate"
+                               class="custom-control-input" @sort4>
+                        <label class="custom-control-label" for="CaseCustomRadioSort3">Data dodania</label>
+                    </div>
+                    <div class="custom-control custom-radio mb-3">
+                        <input type="radio" id="CaseCustomRadioSort4" name="CaseRadioSort" value="deadline"
+                               class="custom-control-input" @sort3>
+                        <label class="custom-control-label" for="CaseCustomRadioSort4">Deadline</label>
+                    </div>
+
+                     <input id="" type="hidden"  readonly value="@Model.searchString" name="searchString" />
+
+                    <input type="submit" style="width:100%" class="btn btn-secondary" value="Zapisz" />
+                </form>
+            </div>
+        </div>
+
+        <a class="btn btn-secondary btn-sm addCaseBtn" style="color:white" title="Dodaj"  asp-page="/addcase">
+            
+        </a>
+
+        <div style="width:100%; position:relative">
+         
+        <form method="get">
+              <input id="" type="hidden"  readonly value="@Model.CaseRadioSort" name="CaseRadioSort" />
+              <input id="" type="hidden"  readonly value="@Model.CaseRadioFilter" name="CaseRadioFilter" />
+              <input type="search" id="searchCaseTable" placeholder="Szukaj"
+                     value="@Model.searchString" name="searchString" />
+        </form>
+      
+                     
+        </div>
+    </div>
+
+    <hr />
+
+    @if (Model.Li.Count == 0)
+    {
+        <div class="row justify-content-center mt-5 " style="text-align:center">
+            <h3> BRAK REKORDÓW </h3>
+        </div>
+        return;
+    }
+
+
+
+<div id="tableContainer" style="position:relative;">
+
+        @{
+            int.TryParse(Model.DBEntriesCount , out int dbEntries);
+            int pagesNavNum = dbEntries / Model.numberOfRowsOnPage;
+            pagesNavNum += dbEntries % Model.numberOfRowsOnPage != 0 ? 1 : 0;
+            int.TryParse(Model.GoToPage, out int GoToPageInt );
+            int addToLp = (GoToPageInt-1) * Model.numberOfRowsOnPage;
+                <div style="text-align:right ; padding-right:10px" class="pageNumberRow">
+                    @for(int i = 1; i-1 <pagesNavNum ; i++)
+                {
+                    string customStyle = "";
+                    if (Model.GoToPage == i.ToString())
+                        customStyle = "font-weight:700";
+                            <a style="color:black; @customStyle"  
+                        asp-route-GoToPage="@i" 
+                        asp-route-CaseRadioFilter=@Model.CaseRadioFilter 
+                        asp-route-searchString=@Model.searchString 
+                        asp-route-CaseRadioSort=@Model.CaseRadioSort >@i
+                            </a>
+                }
+                </div>
+        }
+
+
+    <table id="caseTable" class="tableDefault seperateRow "  style=" overflow-x: auto; ">
+        <thead>
+       
+            <tr style="position: sticky; top: 0; z-index:2">
+                <th scope="col">Lp.</th>
+                <th scope="col">Imię Nazwisko</th>
+                <th scope="col">Numer</th>
+                <th scope="col">Dodano</th>
+                <th scope="col">Stan</th>
+           
+          
+            </tr>
+        </thead>
+            <tbody>
+
+            @for(int i = 0; i < Model.Li.Count; i++)
+            {
+                bool timeIsUp = false;
+                string displayVal = "none";
+                string dynamicClass = "";
+                string dynamicClassSec = "";
+                string dynamicClassThird = "";
+                string barbackgroundColor = "red";
+                string rowLeftNotiColor = "";
+                string czasTrwaniaDays = "┅";
+                string czasTrwaniaHours = "┅";
+                string czasTrwaniaMinutes = "┅";
+                int czasTrwaniaHoursInt =0;
+                int czasTrwaniaMinutesInt = 0;
+                int czasTrwaniaDaysInt = 0;
+                string progress = "0";
+                
+
+               
+                
+                string startDateOnly = "┅";
+                string startTimeOnly = "";
+                string endDateOnly = "┅";
+                string endTimeOnly = "";
+
+                string Notification = @Model.Li[i].Notification == "y" ? "Email" : "Brak";
+                
+                
+                try
+                {
+                    if (!string.IsNullOrEmpty(@Model.Li[i].StartDate))
+                    {
+                        startDateOnly = Convert.ToDateTime(@Model.Li[i].StartDate).ToString("dd.MM.yyyy");
+                        startTimeOnly = Convert.ToDateTime(@Model.Li[i].StartDate).ToString("HH:mm");
+                        if (startTimeOnly == "00:00") 
+                            startTimeOnly = "";
+                    }
+                    if (!string.IsNullOrEmpty(@Model.Li[i].EndDate))
+                    {
+                        endDateOnly = Convert.ToDateTime(@Model.Li[i].EndDate).ToString("dd.MM.yyyy");
+                    }
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine("CaseTable Error converting ToDateOnly" + ex.Message);
+                }
+
+
+
+                try
+                {
+                    if (!string.IsNullOrEmpty(@Model.Li[i].EndDate))
+                    {
+                        var roznica = Convert.ToDateTime(@Model.Li[i].EndDate).
+                        Subtract(@Models.CentralEuTimeZone.Get()).TotalMinutes;
+
+                        var czasTrwania = Convert.ToInt32(roznica);
+
+                        czasTrwaniaHoursInt = (czasTrwania / 60);
+                        czasTrwaniaMinutesInt = (czasTrwania % 60);
+                        czasTrwaniaDaysInt = czasTrwaniaHoursInt / 24;
+                        czasTrwaniaHoursInt = czasTrwaniaDaysInt == 0 ? czasTrwaniaHoursInt : czasTrwaniaHoursInt - 24 * czasTrwaniaDaysInt;
+                        
+
+                        if(czasTrwaniaHoursInt > 0 || czasTrwaniaMinutesInt > 0)
+                        {
+                            czasTrwaniaDays = czasTrwaniaDaysInt.ToString() + "d";
+                            czasTrwaniaHours = czasTrwaniaHoursInt.ToString() + "h";
+                            czasTrwaniaMinutes = czasTrwaniaMinutesInt.ToString() + "min";
+                            progress = czasTrwania * 100 / 1440 + "%";
+                        }
+
+                        if (czasTrwania >= 180 )
+                        {
+                            barbackgroundColor = "#5bde94";
+                        }
+                        else if (czasTrwania < 180 && czasTrwania > 0)
+                        {
+                            barbackgroundColor = "#eb506c";
+                        }
+                        else
+                        {
+                            timeIsUp = true;
+                        }
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("CaseTable Error converting ToDateTime" + ex.Message);
+                    czasTrwaniaHours = "┅";
+                    czasTrwaniaMinutes = "┅";
+                    progress = "0";
+                }
+
+                if (string.IsNullOrEmpty(Model.Li[i].EndDate))
+                {
+                    barbackgroundColor = "transparent";
+                }
+
+                if(Model.Li[i].Status == Models.Case.StatusType.Inactive)
+                {
+                    dynamicClassSec = "checkedRowOpacity";
+                    barbackgroundColor = "transparent";
+                }
+
+                if(Model.Li[i].Highlight == "y")
+                {
+                   //dynamicClassSec = "highlightedRow";
+                    dynamicClassThird = "rowLeftNoti";
+                    rowLeftNotiColor = "#eb506c";
+
+                }
+
+                <tr  style="position:relative" tabindex="0" data-toggle="collapse" data-target="@("#dynamicID-"+i)" class=@dynamicClassSec >
+                    <td style="position:relative" data-label="" class="caseTableFirstTd">
+                        <span class="rowLeftNoti" style="background-color:@rowLeftNotiColor"></span>
+                        <span style="margin-left:4px"> @(i+1+addToLp)</span>
+                        <input type="hidden" value=@Model.Li[i].CaseId />
+                    </td>
+
+
+                    <!--
+                    <td style=" display:inline-block;width: 90%;left: 50%;  transform: translate(-50% , 0); bottom:0; position: absolute; height:0;">
+                        <div class="row " style="display:inline-flex; width:100%;">
+                            <div class="col-4" style="  border-top:solid 2px red">Diagnoza</div>
+                            <div class="col-4" style="  border-top:solid 2px green">Naprawa</div>
+                            <div class="col-4" style="  border-top:solid 2px blue">Kontakt</div>
+                        </div>
+                    </td>
+                    -->
+
+
+
+                    <td data-label="" class="caseTable2Td" style="position:relative">
+                        <!-- TEST FOR UPDARTE TIMER VIA FRONTEND -->
+                        <input type="hidden" class="hiddenEndDateVal" value= "@Model.Li[i].EndDate"/>
+                        <span class="rowLeftNoti alternativeCaseTable" style="background-color:@rowLeftNotiColor"></span>
+                        <div style=" ">
+                            <span >@CustomStr.Adjust(Model.Li[i].FirstName +" "+Model.Li[i].LastName , 32) </span>
+                            <br>
+                            <span class="alternativeCaseTable " style="font-weight:700; "> @Model.Li[i].UnigueNumber</span>
+                        </div>
+                       
+                        <div class="alternativeCaseTable">
+                            @if(Model.Li[i].Status == Models.Case.StatusType.Inactive)
+                            {
+                                    <img class="checkedRowImg" style=" margin-top:8px" src = "../img/black/check2-square2.svg">
+                            }
+                            else if (timeIsUp)
+                            {
+                                    <img class="timeIsUpRowImg" style=" margin-top:8px" src = "../img/black/patch-exclamation.svg">
+                            }
+                            else
+                            {
+                                <div style=" margin-top:6px">
+                                 
+                                    @if (!string.IsNullOrEmpty(Model.Li[i].EndDate))
+                                    {
+                                        <div style=" margin-top:6px">
+                                            <span class="displayTimeLeftSpan" style="font-size: 0.8em;">
+                                            @(czasTrwaniaHours +" : "+czasTrwaniaMinutes) </span>
+                                            <div class="progress" style=" height:6px;">
+                                                <div class="progress-bar customProgBar" role="progressbar" style="width: @progress ;background-color:@barbackgroundColor"
+                                                        aria-valuenow="2" aria-valuemin="0" aria-valuemax="24"></div>
+                                            </div>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <img class="timeIsUpRowImg" src = "../img/black/three-dots.svg">
+                                    }
+                                </div>
+                            }
+                        </div>
+
+
+                    </td>
+                    <td data-label="Numer" class="caseTable4Td">@CustomStr.Adjust(Model.Li[i].UnigueNumber)</td>
+                    <td data-label="Data" class="caseTable5Td">@startDateOnly <span style="font-size:0.8em">  @startTimeOnly </span>  </td>
+                    @if(Model.Li[i].Status == Models.Case.StatusType.Inactive)
+                    {
+                        <td data-label="Pozostało"  class="caseTable6Td"> 
+                            <img class="checkedRowImg" src = "../img/black/check2-square2.svg">
+                        </td>
+                    }
+                    else if (timeIsUp)
+                    {
+                        <td data-label="Pozostało" class="caseTable6Td"> 
+                            <img class="timeIsUpRowImg" src = "../img/black/patch-exclamation.svg">
+                        </td>
+                    }
+                    else
+                    {
+                        <td data-label="Pozostało" class="caseTable6Td" style="max-width:75px">
+                       
+                            @if (!string.IsNullOrEmpty(Model.Li[i].EndDate))
+                            {
+                                <div style="">
+                                    <span class="displayTimeLeftSpan" style="font-size: 0.8em;  transition:  0.5s;">
+                                    @(czasTrwaniaDays +" : "+ czasTrwaniaHours +" : "+czasTrwaniaMinutes) </span>
+                                    <div class="progress" style=" height:7px;">
+                                        <div class="progress-bar customProgBar" role="progressbar" 
+                                        style="width: @progress ;background-color:@barbackgroundColor"
+                                                aria-valuenow="2" aria-valuemin="0" aria-valuemax="24"></div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <img class="timeIsUpRowImg" src = "../img/black/three-dots.svg">
+                            }
+                    </td>
+                    }
+                </tr>
+            
+
+
+                <tr >
+                    <td colspan="5" style=" padding: 0;" >
+                        <div id="@("dynamicID-"+i)" class="collapse">
+                       
+                            <div class="collapsedContainer">
+                                <div class="kr1CustomInputOuterContainer">
+         
+
+                                      <div class="row">
+                                            <div class="col">
+                                                <div class="kr1CustomInputContainer " 
+                                                onclick="kr1CustomInputFocusIn(this)" 
+                                                onfocusout="kr1CustomInputFocusIn(this)">
+                                                    <span class="kr1CustomPlaceholder kr1SpanOnFocus" >Telefon</span>
+                                                    <input type="text"  class="kr1CustomInput allowShortInput" readonly  asp-for="Li[i].Telephone" />
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="kr1CustomInputContainer " 
+                                                onclick="kr1CustomInputFocusIn(this)" 
+                                                onfocusout="kr1CustomInputFocusIn(this)">
+                                                    <span class="kr1CustomPlaceholder kr1SpanOnFocus" >Email</span>
+                                                    <input type="text"  class="kr1CustomInput allowShortInput" readonly asp-for="Li[i].Email" />
+                                                </div>
+                                            </div>
+                                              <div class="col">
+                                                <div class="kr1CustomInputContainer " 
+                                                onclick="kr1CustomInputFocusIn(this)" 
+                                                onfocusout="kr1CustomInputFocusIn(this)">
+                                                    <span class="kr1CustomPlaceholder kr1SpanOnFocus" >Producent</span>
+                                                    <input type="text"  class="kr1CustomInput allowShortInput" readonly asp-for="Li[i].Manufacturer" />
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="kr1CustomInputContainer " 
+                                                onclick="kr1CustomInputFocusIn(this)" 
+                                                onfocusout="kr1CustomInputFocusIn(this)">
+                                                    <span class="kr1CustomPlaceholder kr1SpanOnFocus" >Model</span>
+                                                    <input type="text"  class="kr1CustomInput allowShortInput" readonly asp-for="Li[i].Model" />
+                                                </div>
+                                            </div>
+                                      </div>
+
+
+                                   
+
+
+
+                                      <div class="row">
+                                             <div class="col">
+                                                <div class="kr1CustomInputContainer " 
+                                                onclick="kr1CustomInputFocusIn(this)" 
+                                                onfocusout="kr1CustomInputFocusIn(this)">
+                                                    <span class="kr1CustomPlaceholder kr1SpanOnFocus" >Data zgłoszenia</span>
+                                                    <input type="text"  class="kr1CustomInput allowShortInput" readonly asp-for="Li[i].StartDate" />
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="kr1CustomInputContainer " 
+                                                onclick="kr1CustomInputFocusIn(this)" 
+                                                onfocusout="kr1CustomInputFocusIn(this)">
+                                                    <span class="kr1CustomPlaceholder kr1SpanOnFocus" >Termin</span>
+                                                    <input type="text"  class="kr1CustomInput allowShortInput" readonly asp-for="Li[i].EndDate" />
+                                                </div>
+                                            </div>
+                                             <div class="col">
+                                                <div class="kr1CustomInputContainer " 
+                                                onclick="kr1CustomInputFocusIn(this)" 
+                                                onfocusout="kr1CustomInputFocusIn(this)">
+                                                    <span class="kr1CustomPlaceholder kr1SpanOnFocus" >Data zrealizowania</span>
+                                                    <input type="text"  class="kr1CustomInput allowShortInput" readonly asp-for="Li[i].CompletedDate" />
+                                                </div>
+                                            </div>
+                                              <div class="col">
+                                                <div class="kr1CustomInputContainer " 
+                                                onclick="kr1CustomInputFocusIn(this)" 
+                                                onfocusout="kr1CustomInputFocusIn(this)">
+                                                    <span class="kr1CustomPlaceholder kr1SpanOnFocus" >Powiadomienie</span>
+                                                    <input type="text"  class="kr1CustomInput allowShortInput" readonly value="@Notification" />
+                                                </div>
+                                            </div>
+                                      </div>
+
+                                    
+
+                                      <div class="row">
+                                            <div class="col">
+                                                <div class="kr1CustomInputContainer" style="position:relative">
+                                                    <textarea type="text"  placeholder="Opis" readonly
+                                                    class="kr1CustomTextArea" rows="1">@Model.Li[i].Description</textarea>
+                                                </div>
+                                            </div>
+                                      </div>
+
+                                   
+
+                                      <div class="row">
+                                            <div class="col">
+                                                <div class="kr1CustomInputContainer textareaCont2" style="position:relative">
+                                                    <textarea type="text"  placeholder="Dodaj opis" onkeyup="onChangeCaseOvervewTextArea(this)" 
+                                                    oninput='onChangeCaseOvervewTextArea(this) ,
+                                                    this.style.height = "";this.style.height = this.scrollHeight + "px"'
+                                                    class="kr1CustomTextArea2" rows="4"></textarea>
+                                                    
+                                                </div>
+                                            </div>
+                                      </div>
+
+
+                                        <div class="row " style="margin: -11px 0 4px 0">
+                                            <div class="col" >
+                                                <button class="addDateToTextarea" onclick="appendDateToInput()">
+                                                 <img  src="~/img/black/plus-circle-fill.svg" >
+                                                    <span>Dołącz datę</span>
+                                                </button>
+
+                                                <button class="addDateToTextarea mr-3" onclick="displayDictonaryWindow()">
+                                                 <img  src="~/img/black/list-task.svg" >
+                                                    <span>Słownik</span>
+                                                </button>
+                                               
+                                            </div>
+                                        </div>
+
+
+
+                                      <div style="display:grid">
+                                        <div class="col displayUploadedImgCaseTableContainer">
+
+
+                                        <div class="center awaitImageSpinner">
+                                            <div class="wave"></div>
+                                            <div class="wave"></div>
+                                            <div class="wave"></div>
+                                            <div class="wave"></div>
+                                            <div class="wave"></div>
+                                            <div class="wave"></div>
+                                            <div class="wave"></div>
+                                            <div class="wave"></div>
+                                            <div class="wave"></div>
+                                            <div class="wave"></div>
+                                        </div>
+
+                                            <div class="displayUploadedImgCaseTable">  </div>
+                                        </div>
+
+                                        <div class="tableButtonsContainer">
+                                          <div class="tableButtonCell" >
+                                                <a id="" class="btn  tableButtonSaveTextArea"  
+                                                        title="Niekatywny" href="javascript:saveTextArea(' @Model.Li[i].CaseId')"></a>
+                                            </div>
+                                           <div class="tableButtonCell">
+                                                <a id="" class="btn  tableButtonCheck"
+                                                        title="Niekatywny" href="javascript:markTableRow('@Model.Li[i].CaseId', '@Model.Li[i].Status')"></a>
+                                            </div>
+                                            <div class="tableButtonCell">
+                                                <a id="" class="btn tableButtonhighlight"
+                                                        title="Wyróżnij" href="javascript:hilightCase('@Model.Li[i].CaseId' , '@Model.Li[i].Highlight' )"></a>
+                                            </div>
+                                            <div class="tableButtonCell">
+                                                <a id="" class="btn  tableButtonEdit" asp-route-SelectedId="@Model.Li[i].CaseId" asp-page="/EditCase"
+                                                        title="Edytuj"></a>
+                                            </div>
+
+
+                                       
+                                             <div class="dropdown">
+                                                 <div class="tableButtonCell">
+                                                    <button  id="dropdownMenuButton1" class="btn tableButtonPrint dropdown-toggle"
+                                                            title="Drukuj" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    </button>
+
+
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                        <li><a asp-route-SelectedId="@Model.Li[i].CaseId" target="_blank" 
+                                                        asp-route-SelectedPrintType="smallPrint" asp-page="/PrintCase">Identyfikator
+                                                         <img style="margin-left:5px" src = "../img/black/square-fillx1.svg">
+                                                        </a></li>
+
+                                                        <li><a asp-route-SelectedId="@Model.Li[i].CaseId" target="_blank" 
+                                                        asp-route-SelectedPrintType="smallPrintx2" asp-page="/PrintCase">Identyfikatory 
+                                                          <img style="margin-left:5px" src = "../img/black/square-fillx2.svg">
+                                                        </a></li>
+
+                                                         <li><a asp-route-SelectedId="@Model.Li[i].CaseId" target="_blank" 
+                                                         asp-route-SelectedPrintType="printAll" asp-page="/PrintCase">Wszystkie dane</a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="tableButtonCell">
+                                                <a id="" class="btn tableButtonDelete"
+                                                        title="Usuń"  href="javascript:removeCase(@Model.Li[i].CaseId)"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                               
+                                </div>
+
+                            </div> 
+
+                        </div>
+                    </td>
+                </tr>
+            }
+
+            </tbody>
+    
+            
+    </table>
+
+
+    
+     
+       
+    <div style="text-align:right ; padding-right:10px" class="pageNumberRow">
+        @for(int i = 1; i-1 <pagesNavNum ; i++)
+        {
+            string customStyle = "";
+            if (Model.GoToPage == i.ToString())
+                customStyle = " font-weight:700";
+            <a style="color:black; @customStyle"  
+            asp-route-GoToPage="@i" 
+            asp-route-CaseRadioFilter=@Model.CaseRadioFilter 
+            asp-route-searchString=@Model.searchString 
+            asp-route-CaseRadioSort=@Model.CaseRadioSort >@i</a>
+        }
+    </div>
+
+
+</div>
+
+<!--
+    <div id="predefinedOptionsWindow">
+
+    </div>
+-->
+
+</body>
+

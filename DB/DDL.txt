@@ -1,0 +1,50 @@
+drop table "CASE" cascade constraints PURGE;
+drop table "IMAGE" cascade constraints PURGE;
+drop table "LOGIN" cascade constraints PURGE;
+
+--######################################
+
+CREATE TABLE case
+(
+case_id int  GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
+first_name varchar(30),
+last_name varchar(40),
+sn varchar(70),
+model_name varchar(50),
+manufacturer varchar(40),
+unique_number int,
+telephone varchar(20),
+email varchar(60),
+start_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+end_date TIMESTAMP,
+description CLOB,
+status varchar(30),
+completed_date TIMESTAMP,
+highlight varchar(2),
+powiadomienie varchar(2),
+PRIMARY KEY (case_id)
+);
+
+CREATE TABLE image
+(
+image_id int  GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
+case_id int NOT NULL,
+image_name varchar(150),
+imageBlob Blob,
+PRIMARY KEY (image_id)
+);
+
+CREATE TABLE login
+(
+login_id int  GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
+login varchar(100),
+nazwa varchar(100),
+password_hash varchar(300),
+PRIMARY KEY (login_id)
+);
+
+--######################################
+
+
+alter table image
+add constraint case_image_fk foreign key (case_id) references case(case_id);
